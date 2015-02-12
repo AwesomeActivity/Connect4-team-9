@@ -95,70 +95,70 @@ $(".col1").click(function(event){
   event.preventDefault();
   click_count += 1;
   if (click_count % 2 == 0) {
-    $(".col1 ul li.empty").last().removeClass("empty").addClass("blue").addClass("animated bounce");
+    $(".col1 ul li.empty").last().removeClass("empty").addClass("blue").addClass("animated bounceInDown");
   }
   else
-    $(".col1 ul li.empty").last().removeClass("empty").addClass("red").addClass("animated bounce");
+    $(".col1 ul li.empty").last().removeClass("empty").addClass("red").addClass("animated bounceInDown");
 })
 
 $(".col2").click(function(event){
   event.preventDefault();
   click_count += 1;
   if (click_count % 2 == 0) {
-    $(".col2 li.empty").last().removeClass("empty").addClass("blue");
+    $(".col2 li.empty").last().removeClass("empty").addClass("blue").addClass("animated bounceInDown");
   }
   else
-    $(".col2 li.empty").last().removeClass("empty").addClass("red");
+    $(".col2 li.empty").last().removeClass("empty").addClass("red").addClass("animated bounceInDown");
 })
 
 $(".col3").click(function(event){
   event.preventDefault();
   click_count += 1;
   if (click_count % 2 == 0) {
-    $(".col3 li.empty").last().removeClass("empty").addClass("blue");
+    $(".col3 li.empty").last().removeClass("empty").addClass("blue").addClass("animated bounceInDown");
   }
   else
-    $(".col3 li.empty").last().removeClass("empty").addClass("red");
+    $(".col3 li.empty").last().removeClass("empty").addClass("red").addClass("animated bounceInDown");
 })
 
 $(".col4").click(function(event){
   event.preventDefault();
   click_count += 1;
   if (click_count % 2 == 0) {
-    $(".col4 li.empty").last().removeClass("empty").addClass("blue");
+    $(".col4 li.empty").last().removeClass("empty").addClass("blue").addClass("animated bounceInDown");
   }
   else
-    $(".col4 li.empty").last().removeClass("empty").addClass("red");
+    $(".col4 li.empty").last().removeClass("empty").addClass("red").addClass("animated bounceInDown");
 })
 
 $(".col5").click(function(event){
   event.preventDefault();
   click_count += 1;
   if (click_count % 2 == 0) {
-    $(".col5 li.empty").last().removeClass("empty").addClass("blue");
+    $(".col5 li.empty").last().removeClass("empty").addClass("blue").addClass("animated bounceInDown");
   }
   else
-    $(".col5 li.empty").last().removeClass("empty").addClass("red");
+    $(".col5 li.empty").last().removeClass("empty").addClass("red").addClass("animated bounceInDown");
 })
 
 $(".col6").click(function(event){
   event.preventDefault();
   click_count += 1;
   if (click_count % 2 == 0) {
-    $(".col6 li.empty").last().removeClass("empty").addClass("blue");
+    $(".col6 li.empty").last().removeClass("empty").addClass("blue").addClass("animated bounceInDown");
   }
   else
-    $(".col6 li.empty").last().removeClass("empty").addClass("red");
+    $(".col6 li.empty").last().removeClass("empty").addClass("red").addClass("animated bounceInDown");
 })
 
 $(".col7").click(function(event){
   event.preventDefault();
   click_count += 1;
   if (click_count % 2 == 0) {
-    $(".col7 li.empty").last().removeClass("empty").addClass("blue");
+    $(".col7 li.empty").last().removeClass("empty").addClass("blue").addClass("animated bounceInDown");
   }
   else
-    $(".col7 li.empty").last().removeClass("empty").addClass("red");
+    $(".col7 li.empty").last().removeClass("empty").addClass("red").addClass("animated bounceInDown");
 })
 
 
@@ -166,9 +166,11 @@ $(".col7").click(function(event){
 $("#restart").click(clear_board);
 
 function clear_board(){
-  $("li").removeClass("red").removeClass("blue").addClass("empty");
+  $("li").addClass("animated bounceOutDown").one('oanimationend animationend webkitAnimationEnd', function(event) {
+       $(this).removeClass('animated bounceOutDown red blue bounceInDown');
+       $(this).addClass('empty');
+   });
 }
-
 
 
 })
