@@ -22,12 +22,12 @@ function checkWin(board, color) {
          checkRow(board, color);
 };
 
-addPiece(board, 2, "red");
-addPiece(board, 3, "red");
-addPiece(board, 4, "blue");
-addPiece(board, 4, "blue");
-addPiece(board, 4, "blue");
-addPiece(board, 4, "blue");
-addPiece(board, 5, "red");
-console.log(board);
-console.log(checkWin(board, "blue"));
+// addPiece(board, 2, "red");
+// addPiece(board, 3, "red");
+// addPiece(board, 4, "blue");
+// addPiece(board, 4, "blue");
+// addPiece(board, 4, "blue");
+// addPiece(board, 4, "blue");
+// addPiece(board, 5, "red");
+// console.log(board);
+// console.log(checkWin(board, "blue"));
