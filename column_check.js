@@ -4,13 +4,13 @@ function checkColumn(board, color) {
 
   var width = 7;
 
-  for(row = 0; row < width; row++) {
-    for (col = 0; col < height - 3; col++) {
+  for (col = 0; col < width ; col++) {
+    for(row = 0; row < height - 3; row++) {
       if (color) {
-        if (board[row][col] === color &&
-          board[row][col + 1] === color &&
-          board[row][col + 2] === color &&
-          board[row][col + 3] === color) {
+        if (board[col][row] === color &&
+          board[col][row + 1] === color &&
+          board[col][row + 2] === color &&
+          board[col][row + 3] === color) {
           return true;
         }
       }
@@ -20,15 +20,16 @@ function checkColumn(board, color) {
 }
 
 
-board = [["","","","","",""],
-        ["","","","",""],
-        ["","","","",""],
-        ["","","","",""],
-        ["","red","red","red","red"],
-        ["","","","",""],
-        ["","","","",""]]
+// var board = [
+//         ["", "" ,"","","",""],
+//         ["", "" ,"","","",""],
+//         ["", "" ,"","","",""],
+//         ["", "" ,"blue","blue","blue","blue"],
+//         ["", "" ,"","","",""],
+//         ["", "" ,"","","",""],
+//         ["", "" ,"","","",""]]
 
 
-console.log(checkColumn(board, "red"))
+// console.log(checkColumn(board, "blue"))
 
 

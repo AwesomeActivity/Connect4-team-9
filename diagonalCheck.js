@@ -11,6 +11,7 @@
 // * If neighbor is correct - check next neighbor
 // * If reaches boundary
 // * board[column][row]
+
 function diagonalCheck(board, color) {
   return checkBottomLeftUp(board, color) ||
   checkTopLeftDown(board, color);
@@ -50,35 +51,28 @@ function checkTopLeftDown(board, color) {
   return false //finishes checking all staring nodes and doesn't find 4 in a row will return false
 };
 
-// Test -----------
+// // Test -----------
 
-var board = [
-  [ '','','','','','','red' ],
-  [ '','','','','','red','' ],
-  [ '','','','','red','','' ],
-  [ '','','','red','','','' ],
-  [ '','','red','','','','' ],
-  [ '','','','','','','' ],
-  [ '','','','','','','' ] ]
 
-var board2 = [
-  [ 'red','','','','','','' ],
-  [ '','red','','','','','' ],
-  [ '','','red','','','','' ],
-  [ '','','','red','','','' ],
-  [ '','','','','','','' ],
-  [ '','','','','','','' ],
-  [ '','','','','','','' ] ]
 
-var board3 = [
-  [ 'red','','','blue','','','' ],
-  [ '','red','','','','','red' ],
-  [ 'red','','blue','','blue','','red' ],
-  [ '','blue','','red','blue','blue','' ],
-  [ '','red','','red','blue','','' ],
-  [ 'blue','','blue','blue','','','' ],
-  [ '','','blue','','','','' ] ]
+// var board2 = [
+//   [ 'red','','','','','','' ],
+//   [ '','red','','','','','' ],
+//   [ '','','red','','','','' ],
+//   [ '','','','red','','','' ],
+//   [ '','','','','','','' ],
+//   [ '','','','','','','' ],
+//   [ '','','','','','','' ] ]
 
-console.log(checkBottomLeftUp(board,'red') === true);
-console.log(checkTopLeftDown(board2,'red') === true);
-console.log(diagonalCheck(board3, 'blue')) === true;
+// var board3 = [
+//   [ 'red','','','blue','','','' ],
+//   [ '','red','','','','','red' ],
+//   [ 'red','','blue','','blue','','red' ],
+//   [ '','blue','','red','blue','blue','' ],
+//   [ '','red','','red','blue','','' ],
+//   [ 'blue','','blue','blue','','','' ],
+//   [ '','','blue','','','','' ] ]
+// console.log(checkWin(board, 'red') === true);
+// console.log(checkBottomLeftUp(board,'red') === true);
+// console.log(checkTopLeftDown(board2,'red') === true);
+// console.log(diagonalCheck(board3, 'blue')) === true;

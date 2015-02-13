@@ -31,6 +31,7 @@ $(document).ready(function(){
       click_count += 1;
       if (click_count % 2 == 0) {
         $(this).find(".empty").last().removeClass("empty").addClass("blue").addClass("animated bounceInDown");
+        addPiece(board,index);
       }
       else{
         $(this).find(".empty").last().removeClass("empty").addClass("red").addClass("animated bounceInDown");
