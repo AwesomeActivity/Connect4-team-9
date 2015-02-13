@@ -4,8 +4,8 @@ function checkRow(board, color) {
 
   var width = 7;
 
-  for(col = 0; col < height; col++) {
-    for (row = 0; row < width - 3; row++) {
+  for(col = 0; col < width; col++) {
+    for (row = 0; row < height - 3; row++) {
       if (color) {
         if (board[row][col] === color &&
           board[row + 1][col] === color &&
@@ -20,13 +20,16 @@ function checkRow(board, color) {
 }
 
 
-board = [["","","","","",""],
-         ["","","blue","",""],
-         ["","","blue","",""],
-         ["","","blue","",""],
-         ["","","blue","",""],
-         ["","","","",""],
-         ["","","","",""]]
+// var board = [
+//         ["", "" ,"","","","blue"],
+//         ["", "" ,"","","","blue"],
+//         ["", "" ,"","","","blue"],
+//         ["", "" ,"blue","","blue","blue"],
+//         ["", "" ,"","","",""],
+//         ["", "" ,"","","",""],
+//         ["", "" ,"","","",""]]
 
-console.log(checkRow(board, "blue"))
+
+
+// console.log(checkRow(board, "blue"))
 
