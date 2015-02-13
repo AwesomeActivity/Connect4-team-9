@@ -2,7 +2,7 @@
 
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="app.css">
+  <link rel="stylesheet" type="text/css" href="app2.css">
   <link rel="stylesheet" type="text/css" href="falling.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type="text/javascript" src="diagonalCheck.js"></script>
@@ -15,79 +15,89 @@
 
 <body>
   <h1>CONNECT FOUR</h1>
-  <h2></h2><h2></h2><h2></h2><h2></h2><h2></h2><h2></h2><h2></h2>
-  <div id="board">
-  <div class="col1 column">
-    <ul>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-    </ul>
+  <div class="wrapper">
+    <div class="top">
+      <div class="headers"><h2></h2></div>
+      <div class="headers"><h2></h2></div>
+      <div class="headers"><h2></h2></div>
+      <div class="headers"><h2></h2></div>
+      <div class="headers"><h2></h2></div>
+      <div class="headers"><h2></h2></div>
+      <div class="headers"><h2></h2></div>
+    </div>
+    <div id="board">
+      <div class="col1 column">
+        <ul>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+        </ul>
+      </div>
+      <div class="col2 column">
+        <ul>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+        </ul>
+      </div>
+      <div class="col3 column">
+        <ul>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+        </ul>
+      </div>
+      <div class="col4 column">
+        <ul>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+        </ul>
+      </div>
+      <div class="col5 column">
+        <ul>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+        </ul>
+      </div>
+      <div class="col6 column">
+        <ul>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+        </ul>
+      </div>
+      <div class="col7 column">
+        <ul>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+          <li class="empty"></li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class="col2 column">
-    <ul>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-    </ul>
-  </div>
-  <div class="col3 column">
-    <ul>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-    </ul>
-  </div>
-  <div class="col4 column">
-    <ul>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-    </ul>
-  </div>
-  <div class="col5 column">
-    <ul>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-    </ul>
-  </div>
-  <div class="col6 column">
-    <ul>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-    </ul>
-  </div>
-  <div class="col7 column">
-    <ul>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-      <li class="empty"></li>
-    </ul>
-  </div>
-</div>
-    <button id="restart">Start Over</button>
+  <button id="restart">Start Over</button>
 </body>
 </html>
